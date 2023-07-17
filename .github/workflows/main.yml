@@ -24,6 +24,10 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Compile Java
-        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/*.java
+      - name: Compile Java arrays
+        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/arrays/*.java
+      - name: Compile Java object_references
+        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/object_references/*.java
+      - name: Compile Java primitives
+        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/primitives/*.java
 ```
