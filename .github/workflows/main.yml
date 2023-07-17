@@ -1,6 +1,3 @@
-## How to create the build.yml file for the Github actions
-
-```yml 
 name: Java Build
 
 on:
@@ -26,4 +23,9 @@ jobs:
 
       - name: Compile Java arrays
         run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/arrays/*.java
-```
+
+      - name: Compile Java object_references
+        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/object_references/*.java
+        
+      - name: Compile Java primitives
+        run: javac -d . jva007-java-fundamentals/src/com/luxoft/jva007/primitives/*.java
